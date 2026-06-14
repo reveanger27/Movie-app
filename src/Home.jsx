@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex flex-col items-center justify-center px-6">
@@ -9,18 +11,16 @@ function Home() {
       </p>
 
       <div className="flex gap-4">
-        <a 
-          href="/movies" 
+        <Link to ="/movies" 
           className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-full hover:bg-blue-50 transition"
         >
           Cari Film →
-        </a>
-        <a 
-          href="/about" 
+        </Link>
+        <Link to ="/about" 
           className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 transition"
         >
           About
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-3 gap-6 mt-16 text-center">
